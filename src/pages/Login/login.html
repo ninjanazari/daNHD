@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="auth-wrapper">
+  <div class="auth-box">
+    <img src="assets/schramek-logo.png" alt="Firmenlogo" class="company-logo">
+    <h2>Login</h2>
+
+    <form (ngSubmit)="handleLogin()" #form="ngForm">
+      <label for ="email">E-Mail-Address</label>
+      <input
+        type = "email"
+        id = "email"
+        name = "email"
+        required
+        [(ngModel)]="emailAddress"
+        class = "form-input"
+        />
+      <button type="login" class="login-btn">Login</button>
+    </form>
+
+    <div class="login-link">
+      <a href="#"> Forgot your password? </a>
+    </div>
+  </div>
+</div>
