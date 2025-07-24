@@ -1,0 +1,89 @@
+/*Gesamtlayout*/
+.employees-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+employees-title-row h2{
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.btn.add {
+  background-color: #f4b626;
+  color: white;
+}
+
+.btn.create {
+  background-color: #444;
+  color: white;
+}
+
+.btn.edit {
+  background-color: #2196f3;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.btn.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.employee-box {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  margin: 0 20px 2rem 20px;
+  overflow-x: auto;
+}
+
+.employee-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-box th,
+.employee-box td {
+  text-align: left;
+  padding:  1rem;
+  border-bottom: 1px solid #e0e0e0;
+  vertical-align: middle;
+}
+
+
+
+.color-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.teams-box {
+  background-color: white;
+  padding: 2rem;
+  margin: 0 20px 2rem 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.08);
+  text-align: center;
+}
